@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("font-awesome.min.css");
 /*
@@ -7,6 +6,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 /* Reset */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -1114,7 +1114,7 @@ html {
 body {
   background: #fff;
   height: 100%;
-  font-family: 'Source Sans Pro', sans-serif , '微軟正黑體';
+  font-family: 'Source Sans Pro', sans-serif , 'Noto Sans TC';
   font-weight: 300;
   font-size: 18pt;
   line-height: 1.75em;
@@ -1503,6 +1503,9 @@ button {
       vertical-align: middle; }
     .main.style1.inactive .content {
       opacity: 0; }
+  .main .ti {
+    font-weight: bold;
+    font-size: 18pt; }
   .main.style2 {
     padding: 3em 0 3em 0;
     overflow: hidden; }
@@ -2245,13 +2248,24 @@ body.is-touch .poptrox-popup .closer {
       padding: 1.5em 1.25em 1.5em 1.25em;
       background-color: rgba(255, 255, 255, 0.9); }
   /* Main */
+  #intro {
+    background-position: center;
+    background: url("../../images/intro_mb.jpg");
+    background: url("images/overlay.png"), url("../../images/intro_mb.jpg");
+    background-size: cover;
+    background-attachment: fixed, fixed;
+    background-position: center;
+    background-repeat: repeat, no-repeat; }
   .main.fullscreen {
     height: auto !important; }
   .main.style1 {
     padding: 4em 15px 4em 15px; }
     .main.style1 h2 {
-      font-size: 3em;
+      font-size: 2.8em;
       letter-spacing: -3px; }
+    .main.style1 .ti {
+      font-weight: bold;
+      font-size: 14pt; }
   .main.style2 {
     padding: 6em 15px 6em 15px; }
     .main.style2:before, .main.style2:after {
@@ -2269,6 +2283,8 @@ body.is-touch .poptrox-popup .closer {
   .main.style3 {
     text-align: center;
     padding: 3em 10px 3em 10px; }
+  .box.style2 {
+    background-color: rgba(255, 255, 255, 0.5); }
   /* Header */
   #header {
     height: 2.5em;
